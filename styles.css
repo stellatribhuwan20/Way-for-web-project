@@ -214,6 +214,7 @@ svg#Capa_1 {
     height:100vh;
     background-repeat: no-repeat;
     background-image:url("./2.webp")!important;
+    background-size: cover!important;
     background-position:center;
   }
   
