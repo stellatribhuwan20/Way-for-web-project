@@ -350,7 +350,7 @@ svg#Capa_1 {
     color: #333;
 }
 .black-box{
-    background-image:url('./inspiration-geometry.webp');
+    background-image:url('./inspiration-geometry.webp')!important;
     width: 100%;
     /* height: 30vh; */
     background-position: center;
