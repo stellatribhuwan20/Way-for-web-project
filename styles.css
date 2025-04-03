@@ -69,7 +69,7 @@ svg#Capa_1 {
     cursor: crosshair;
   } */
 /* -------------------- */
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap')!important;
 .card {
     width: 300px;
     height: 250px;
