@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script
+        src="http://www.jqueryscript.net/demo/jQuery-Plugin-For-Water-Ripple-Animation-ripples/js/jquery.ripples.js">
+        </script>
+    <style>
+        .navbar {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            padding: 20px 50px;
+
+            align-items: left;
+            z-index: 1000;
+        }
+        .navbar-expand-lg .navbar-collapse {
+    display: flex;
+    flex-basis: auto;
+    justify-content: end!important;
+}
+
+        .navbar-light .navbar-nav .nav-link.active,
+        .navbar-light .navbar-nav .show>.nav-link {
+            color: #fff;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: rgb(255 255 255 / 100%);
+        }
+        .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+nav {
+  position: inherit;
+  order: 2;
+ 
+  }
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    }
+
+li {
+    margin-left: 20px;
+    }
+
+        .hero {
+            height: 80vh;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            text-align: left;
+            /* padding-left: 10%; */
+            background: url(/hacker-prints-code-laptop-keyboard-break-into-cyberspace.jpg) no-repeat center center/cover;
+            opacity: 1;
+        }
+
+        .hero-content h1 {
+            font-size: 80px;
+            font-weight: bold;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #ccc;
+        }
+        /* .justin{
+            margin-left: 100px;
+        } */
+    </style>
+</head>
+<!-- menu section -->
+
+<body>
+    <!-- <header>
+            <nav>
+                <div class="logo">
+                    <img src="/logo (1).webp" alt="Company Logo" class="logo">
+                </div>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header> -->
+    <nav class="navbar navbar-expand-lg navbar-light text-white">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+             <img src="/logo (1).webp">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-light" id="navbarNavDropdown">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown link
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- home page banner -->
+
+    <div class="container-fluid allen">
+        <div class="row allen">
+            <div class="col allen">
+
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active image">
+
+                            <div class="carousel-caption d-none d-md-block banner-text">
+                                <h1 style="font-size: 60px;font-family: poppins;font-weight: 800;">ALAN WALKER</h1>
+                                <p><I style="font-style: 40px;">Web & Mobile App Developer</I></p>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- About us section -->
+
+    <div class="container abt-sec">
+        <div class="row">
+            
+            <div class="col-md-5 justin">
+                <img src="/Untitled design (5).jpg" class="text-center" style="width: 90%;height: 100%;transform: translate3d(-1.948px, -2.78137px, 0px);
+                transform-style: preserve-3d;
+                backface-visibility: hidden;">
+            </div>
+            <div class="col-md-6 para">
+                <h1 style="letter-spacing: 1px;font-family: poppins;font-weight: 600;">ABOUT<span
+                        style="color: #E54B4B;letter-spacing: 10px;"> ME</span>
+                </h1>
+                <p style="text-align: justify;line-height: 30px;font-family: poppins;font-weight: 400;">Hello! I'm Alan
+                    Walker. I'm a web developer, and I'm
+                    very passionate and dedicated to my work. With 20 years experience as a professional web
+                    developer, I have acquired the skills and knowledge necessary to make your project a success. I
+                    enjoy every step of the design process, from discussion and collaboration.</p>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="/icons8-web-development-50.png" alt="" style="margin-left: 0px;height: 30px;width: 30px;"><span
+                    style="font-size: 16px;font-family: poppins;font-weight: 300;color: #797878;line-height: 25px;"><span
+                        style="font-weight: 700;color: black;"></span> Web Development</span>
+                        
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/icons8-search-engine-optimization-50.png" alt="" style="margin-left: 0px;height: 30px;width: 30px;"><span
+                    style="font-size: 16px;font-family: poppins;font-weight: 300;color: #797878;line-height: 25px;"><span
+                        style="font-weight: 700;color: black;"></span> Search Engine Optimization</span><br><br>
+                        
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/icons8-social-media-marketing-50.png" alt="" style="margin-left: 0px;height: 30px;width: 30px;"><span
+                    style="font-size: 16px;font-family: poppins;font-weight: 300;color: #797878;line-height: 25px;"><span
+                        style="font-weight: 700;color: black;"></span> Social Media Marketing</span>
+                        
+                    </div>
+                    <div class="col-md-6">
+                        <img src="/icons8-content-creator-50.png" alt="" style="margin-left: 0px;height: 30px;width: 30px;"><span
+                    style="font-size: 16px;font-family: poppins;font-weight: 300;color: #797878;line-height: 25px;"><span
+                        style="font-weight: 700;color: black;"></span> Content Creator</span><br><br><br>
+                        
+                    </div>
+
+
+                </div>
+                <button type="button" class="btn btn-primary butt">Download CV</button>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Selected works -->
+
+    <div class="container-fluid sel_work">
+        <div class="row">
+
+
+            <h1 style="letter-spacing: 10px;padding-left: 200px;font-family: poppins;font-weight: 600;">SELECTED<span
+                    style="color: #E54B4B;letter-spacing: 10px;font-family: poppins;">WORK</span> </h1>
+
+
+
+        </div>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card ">
+                        <img src="/ava.jpg" alt="">
+                        <div class="content">
+                            <h4>Avacado</h4>
+                            <span>Sweet</span>
+                        </div>
+                        <div class="cover"></div>
+                        <div class="shadow"></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card ">
+                        <img src="/3.jpg" alt="">
+                        <div class="content">
+                            <h4>Icecream</h4>
+                            <span>Sweet</span>
+                        </div>
+                        <div class="cover"></div>
+                        <div class="shadow"></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card ">
+                        <img src="/5.jpg" alt="">
+                        <div class="content">
+                            <h4>Cheeries</h4>
+                            <span>Fruit</span>
+                        </div>
+                        <div class="cover"></div>
+                        <div class="shadow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card ">
+                        <img src="/4.jpg" alt="">
+                        <div class="content">
+                            <h4>Avacado</h4>
+                            <span>Sweet</span>
+                        </div>
+                        <div class="cover"></div>
+                        <div class="shadow"></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card ">
+                        <img src="/dice.jpg" alt="">
+                        <div class="content">
+                            <h4>Icecream</h4>
+                            <span>Sweet</span>
+                        </div>
+                        <div class="cover"></div>
+                        <div class="shadow"></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card ">
+                        <img src="/bag.jpg" alt="">
+                        <div class="content">
+                            <h4>Cheeries</h4>
+                            <span>Fruit</span>
+                        </div>
+                        <div class="cover"></div>
+                        <div class="shadow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- progress bar -->
+
+    <div class="container progress_bar" style="padding-bottom: 50px;">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 style="font-family: poppins;">I have high skills in developing <br>and programming</h1>
+                <p style="font-family: poppins;">I was doing everything in my power to provide me with all the
+                    experiences to provide cost-effective and high quality products to satisfy my customers all over the
+                    world</p>
+            </div>
+            <div class="col-md-6">
+
+                <div class="skill-box">
+                    <span class="title" style="font-family: poppins;">Web Development</span>
+
+                    <div class="skill-bar">
+                        <span class="skill-per html">
+                            <span class="tooltip">50%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box" style="font-family: poppins;">
+                    <span class="title">Brand Identity</span>
+
+                    <div class="skill-bar">
+                        <span class="skill-per html">
+                            <span class="tooltip">70%</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="skill-box" style="font-family: poppins;">
+                    <span class="title">Logo Design</span>
+
+                    <div class="skill-bar">
+                        <span class="skill-per html">
+                            <span class="tooltip">50%</span>
+                        </span>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- freelance column -->
+
+    <div class="container-fluid black-box">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 style="color: white;font-family: poppins;padding-left: 180PX;padding-top: 50px;font-family: 26px;">
+                    I'm available for freelance work</h1>>
+            </div>
+            <div class="col-md-3">
+                <h5
+                    style="color: white;font-family: poppins;text-decoration: underline;padding-left: 200px;padding-top: 60px;font-size: 16px;">
+                    CONTACT ME</h5>>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- blogs -->
+
+    <div class="container-fluid sel_work">
+        <div class="row">
+
+
+            <h1 style="letter-spacing: 10px;padding-left: 200px;font-family: poppins;font-weight: 600;">LATEST<span
+                    style="color: #E54B4B;letter-spacing: 10px;font-family: poppins;">BLOG</span> </h1>
+
+
+
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/shoes3.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"
+                                style="font-weight: 700;font-family: poppins;font-size: 18px;line-height: 26px;letter-spacing: 1px;">
+                                Developers watch out for these burnout<br> symptoms</h5>
+                            <p class="card-text"><i>By Alex Watson 01 January 2022</i></p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/headphones3.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"
+                                style="font-weight: 700;font-family: poppins;font-size: 18px;line-height: 26px;letter-spacing: 1px;">
+                                How to be appreciated for your hard work as a developer</h5>
+                            <p class="card-text"><i>By Alex Watson 01 January 2022</i></p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="/dice3.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title"
+                                style="font-weight: 700;font-family: poppins;font-size: 18px;line-height: 26px;letter-spacing: 1px;">
+                                How designers and developers can collaborate better</h5>
+                            <p class="card-text"><i>By Alex Watson 01 January 2022</i></p>
+                            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <!-- contact us -->
+    <div class="container form1" style="padding-top: 80px;">
+        <div class="row">
+            <div class="col-md-6">
+                <h1
+                    style="letter-spacing: 10px;padding-left: 30px;font-family: poppins;font-weight: 600;margin-bottom: 20px;">
+                    GET IN <span style="color: #E54B4B;letter-spacing: 10px;font-family: poppins;">TOUCH</span> </h1>
+                <p
+                    style="font-size: 16px;font-family: poppins;font-weight: 300;color: #797878;margin-left: 30px;line-height: 28px;">
+                    Please fill out the form on this section to contact with me. <br>Or call between 9:00 a.m. and 8:00
+                    p.m. ET, Monday through Friday</p>
+                <img src="/maps.png" alt="" style="margin-left: 20px;height: 30px;width: 30px;"><span
+                    style="font-size: 16px;font-family: poppins;font-weight: 300;color: #797878;line-height: 25px;"><span
+                        style="font-weight: 700;color: black;">Address:</span> Brook 103, New York, USA</span><br><br>
+                <img src="/msg.png" alt="" style="margin-left: 20px;height: 30px;width: 30px;"> <span
+                    style="font-size: 16px;font-family: poppins;font-weight: 300;color: #797878;line-height: 25px;"><span
+                        style="font-weight: 700;color: black;">Email</span>:example@gmail.com</span><br><br>
+                <img src="/new twitter.png" alt="" style="margin-left: 20px;height: 30px;width: 30px;"> <span
+                    style="font-size: 16px;font-family: poppins;font-weight: 300;color: #797878;line-height: 25px;"><span
+                        style="font-weight: 700;color: black;">Twitter</span>@twitternickname</span><br><br>
+                <img src="/new website.png" alt="" style="margin-left: 20px;height: 30px;width: 30px;"> <span
+                    style="font-size: 16px;font-family: poppins;font-weight: 300;color: #797878;line-height: 25px;"><span
+                        style="font-weight: 700;color: black;">Website</span>www.myaddress.com</span>
+
+            </div>
+            <div class="col-md-5">
+
+                <!-- <div class="container"> -->
+                <form>
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- cursor code -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+
+    <!-- footer -->
+
+    <footer>
+        <svg viewBox="0 0 120 28">
+            <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="
+           1 0 0 0 0  
+           0 1 0 0 0  
+           0 0 1 0 0  
+           0 0 0 13 -9" result="goo" />
+                    <xfeBlend in="SourceGraphic" in2="goo" />
+                </filter>
+                <path id="wave"
+                    d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+            </defs>
+
+            <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use>
+            <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
+
+
+            <g class="gooeff" filter="url(#goo)">
+                <circle class="drop drop1" cx="20" cy="2" r="8.8" />
+                <circle class="drop drop2" cx="25" cy="2.5" r="7.5" />
+                <circle class="drop drop3" cx="16" cy="2.8" r="9.2" />
+                <circle class="drop drop4" cx="18" cy="2" r="8.8" />
+                <circle class="drop drop5" cx="22" cy="2.5" r="7.5" />
+                <circle class="drop drop6" cx="26" cy="2.8" r="9.2" />
+                <circle class="drop drop1" cx="5" cy="4.4" r="8.8" />
+                <circle class="drop drop2" cx="5" cy="4.1" r="7.5" />
+                <circle class="drop drop3" cx="8" cy="3.8" r="9.2" />
+                <circle class="drop drop4" cx="3" cy="4.4" r="8.8" />
+                <circle class="drop drop5" cx="7" cy="4.1" r="7.5" />
+                <circle class="drop drop6" cx="10" cy="4.3" r="9.2" />
+
+                <circle class="drop drop1" cx="1.2" cy="5.4" r="8.8" />
+                <circle class="drop drop2" cx="5.2" cy="5.1" r="7.5" />
+                <circle class="drop drop3" cx="10.2" cy="5.3" r="9.2" />
+                <circle class="drop drop4" cx="3.2" cy="5.4" r="8.8" />
+                <circle class="drop drop5" cx="14.2" cy="5.1" r="7.5" />
+                <circle class="drop drop6" cx="17.2" cy="4.8" r="9.2" />
+                <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
+            </g>
+
+
+        </svg>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="/logo (1).webp" style="margin-bottom: 50px;">
+                </div>
+                <div class="col">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-google"></a>
+                    <a href="#" class="fa fa-linkedin"></a>
+                </div>
+                <div class="col">
+                    © Copyright 2025
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+    <script src="/project2.js"></script>
+</body>
+
+
+
+
+</html>
