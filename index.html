@@ -109,6 +109,24 @@ li {
             margin-top: 10px;
             color: #ccc;
         }
+
+        .card{
+             transform: scale(1.05);
+        }
+        const cards = document.querySelectorAll(".card");
+
+cards.forEach((card) => {
+  card.addEventListener("mousemove", (e) => {
+    let xAxis = (e.offsetX - card.offsetWidth / 2) / 25;
+    let yAxis = (e.offsetY - card.offsetHeight / 2) / 25;
+    card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+  });
+
+  card.addEventListener("mouseleave", () => {
+    card.style.transform = "rotateY(0deg) rotateX(0deg)";
+  });
+});
+
         /* .justin{
             margin-left: 100px;
         } */
